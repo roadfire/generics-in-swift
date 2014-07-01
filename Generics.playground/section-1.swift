@@ -19,18 +19,18 @@ printEachCharacter(str)
 // But what if we want to print each element in an Array? How do we do that? We might try this (uncomment to play):
 
 /*
-func printEachElementInArray(array: AnyObject[])
+func printEachElementInArray(arr: AnyObject[])
 {
-for element: AnyObject in array
-{
-println(element)
-}
+    for element: AnyObject in arr
+    {
+        println(element)
+    }
 }
 
 // But does that work?
 
-let array = ["Sally", "Jim"]
-printEachElementInArray(array)
+let people = ["Sally", "Jim"]
+printEachElementInArray(people)
 */
 
 // Nope - the compiler doesn't like the line above. You should see "Cannot convert the expression's type '{}' to type 'AnyObject[]'"
