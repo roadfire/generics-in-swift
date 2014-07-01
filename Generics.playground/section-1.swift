@@ -2,9 +2,9 @@
 
 // Let's make a function that prints each character in a String. How does this look?
 
-func printEachCharacter(string: String)
+func printEachCharacter(str: String)
 {
-    for character in string
+    for character in str
     {
         println(character)
     }
@@ -12,8 +12,8 @@ func printEachCharacter(string: String)
 
 // Now we should see each character printed to the console...
 
-let str = "Hello"
-printEachCharacter(str)
+let greeting = "Hello"
+printEachCharacter(greeting)
 
 
 // But what if we want to print each element in an Array? How do we do that? We might try this (uncomment to play):
@@ -46,9 +46,9 @@ printEachElementInArray(people)
 
 // ...maybe we need to use generics?
 
-func printEachElement<T>(array: T[])
+func printEachElement<T>(arr: T[])
 {
-    for element in array
+    for element in arr
     {
         println(element)
     }
@@ -66,9 +66,9 @@ printEachElement(friends)
 
 // Now...what if we want a function that prints each element of either a String *or* an Array? Shall we try this?
 
-func printEach<T: Sequence>(sequence: T)
+func printEach<T: Sequence>(things: T)
 {
-    for thing in sequence
+    for thing in things
     {
         println(thing)
     }
