@@ -19,9 +19,9 @@ printEachCharacter(greeting)
 // But what if we want to print each element in an Array? How do we do that? We might try this (uncomment to play):
 
 /*
-func printEachElementInArray(arr: [AnyObject])
+func printEachElementInArray(arr: [Any])
 {
-    for element: AnyObject in arr
+    for element in arr
     {
         println(element)
     }
@@ -33,7 +33,7 @@ let people = ["Sally", "Jim"]
 printEachElementInArray(people)
 */
 
-// Nope - the compiler doesn't like the line above. You should see "Cannot convert the expression's type '{}' to type 'AnyObject[]'"
+// Nope - the compiler doesn't like the line above. You should see "'String' is not identical to 'Any'"
 
 // (You might want to delete or comment out the broken code above.)
 
