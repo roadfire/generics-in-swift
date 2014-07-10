@@ -19,7 +19,7 @@ printEachCharacter(greeting)
 // But what if we want to print each element in an Array? How do we do that? We might try this (uncomment to play):
 
 /*
-func printEachElementInArray(arr: AnyObject[])
+func printEachElementInArray(arr: [AnyObject])
 {
     for element: AnyObject in arr
     {
@@ -46,7 +46,7 @@ printEachElementInArray(people)
 
 // ...maybe we need to use generics?
 
-func printEachElement<T>(arr: T[])
+func printEachElement<T>(arr: [T])
 {
     for element in arr
     {
@@ -87,7 +87,7 @@ printEach(veggies)
 // So again, we have a generic function that takes a parameter that's of type T. And T is a Sequence (something we can iterate over), as indicated by the <T: Sequence> just after the method name. Make sense?
 
 // You can read all of this here:
-// http://roadfiresoftware.com/blog
+// http://roadfiresoftware.com/2014/07/working-with-generics-in-swift/
 
 // P.S. If you want to learn more Swift, you can get lessons like this every week on my newsletter:
 // http://eepurl.com/FSeIT
