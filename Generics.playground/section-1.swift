@@ -66,7 +66,7 @@ printEachElement(friends)
 
 // Now...what if we want a function that prints each element of either a String *or* an Array? Shall we try this?
 
-func printEach<T: Sequence>(things: T)
+func printEach<T: SequenceType>(things: T)
 {
     for thing in things
     {
@@ -84,7 +84,7 @@ printEach(veggies)
 
 // (Of course it works - why else would it be here, right?) But does the code make sense?
 
-// So again, we have a generic function that takes a parameter that's of type T. And T is a Sequence (something we can iterate over), as indicated by the <T: Sequence> just after the method name. Make sense?
+// So again, we have a generic function that takes a parameter that's of type T. And T is a SequenceType (something we can iterate over), as indicated by the <T: SequenceType> just after the method name. Make sense?
 
 // You can read all of this here:
 // http://roadfiresoftware.com/2014/07/working-with-generics-in-swift/
